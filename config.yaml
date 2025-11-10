@@ -1,0 +1,32 @@
+# Inputs
+# Use ONE of the following:
+# accession: SRR12345678
+accession_list: accession_ids.txt
+
+# Output root
+output_dir: results_qc_assembly
+
+# Host reference (BWA index prefix)
+reference_file: /path/to/host/bwa_index/GRCh38  # do NOT include .bwt etc.
+
+# Tool params
+trim_threads: 8
+map_threads: 8
+samtools_threads: 8
+pigz_threads: 4
+
+# Trim Galore extras
+trim_galore_extra: "--quality 20 --length 50 --fastqc"
+
+# SPAdes
+spades_bin: "metaspades.py"
+spades_threads: 16
+spades_memory_gb: 128
+spades_kmers: "21,33,55"
+spades_phred_offset: 33
+spades_omp_threads: 16
+spades_mkl_threads: 1
+spades_extra: ""
+
+# fastq-dl optional switches (e.g., --provider ena/sra)
+fastq_dl_extra: ""
