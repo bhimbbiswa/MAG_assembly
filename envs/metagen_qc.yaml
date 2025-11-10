@@ -1,0 +1,9 @@
+name: metagen_qc
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - python=3.11
+  - trim-galore
+  - fastqc
+  - bwa
+  - samtools
+  - pigz
