@@ -1,0 +1,7 @@
+# runtime dirs
+.snakemake/
+results_qc_assembly/
+data/
+*.log
+*.flag
+.DS_Store
