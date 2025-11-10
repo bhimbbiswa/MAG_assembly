@@ -1,0 +1,5 @@
+name: fastq-dl
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - python=3.11
+  - fastq-dl
